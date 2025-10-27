@@ -13,9 +13,8 @@ from urllib.parse import urlparse
 from joblib import load
 from scipy.sparse import hstack, csr_matrix
 
-# ---------------------------------------------------------
+
 # Load model artifacts
-# ---------------------------------------------------------
 @st.cache_resource(show_spinner=False)
 def load_artifacts():
     try:
@@ -31,9 +30,9 @@ def load_artifacts():
 
 rf, tfidf, numeric_cols, scaler, le = load_artifacts()
 
-# ---------------------------------------------------------
+
 # Feature extraction
-# ---------------------------------------------------------
+
 def extract_url_features(url):
     url = str(url)
     f = {}
@@ -91,9 +90,9 @@ def prepare_single_url(url, tfidf, numeric_cols, scaler):
     tfidf_vec = tfidf.transform([url])
     return hstack([csr_matrix(numeric_scaled), tfidf_vec], format='csr')
 
-# ---------------------------------------------------------
+
 # Page config and global styles
-# ---------------------------------------------------------
+
 st.set_page_config(
     page_title="Malicious URL Detection System",
     page_icon="🌐",
@@ -169,15 +168,15 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# ---------------------------------------------------------
+
 # Sidebar Navigation
-# ---------------------------------------------------------
+
 st.sidebar.title("🔎 Navigation")
 menu = st.sidebar.radio("Go to:", ["Overview", "Model Demo", "Dataset", "About"])
 
-# ---------------------------------------------------------
+
 # Overview Section
-# ---------------------------------------------------------
+
 if menu == "Overview":
     st.title("🌐 Malicious URL Detection Using Random Forest")
     st.subheader("Project Overview")
@@ -247,9 +246,9 @@ if menu == "Overview":
 
     
 
-# ---------------------------------------------------------
+
 # Model Demo Section (Improved Visual Design & Readability)
-# ---------------------------------------------------------
+
 elif menu == "Model Demo":
     st.markdown("""
         <style>
@@ -402,9 +401,9 @@ elif menu == "Model Demo":
     st.markdown("</div>", unsafe_allow_html=True)
 
 
-# ---------------------------------------------------------
+
 # Dataset Section
-# ---------------------------------------------------------
+
 elif menu == "Dataset":
     st.title("📊 Dataset Overview")
     st.write("Below is a random sample preview of the dataset used for training the model:")
@@ -421,9 +420,9 @@ elif menu == "Dataset":
         st.caption("🔄 Note: The rows are shuffled each time the page reloads to show a mixed preview.")
     except Exception:
         st.warning("⚠️ Could not load dataset.csv. Please ensure it is placed in the same folder.")
-# ---------------------------------------------------------
+
 # About Section
-# ---------------------------------------------------------
+
 elif menu == "About":
     st.markdown("""
         <style>
