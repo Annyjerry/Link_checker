@@ -52,9 +52,10 @@ cd Link_checker
 
 2️⃣ Install dependencies
 
-Make sure you have Python 3.10+ installed. Then install all required packages:
-
+Make sure you have Python 3.10+ installed.
+Then install all required packages:
 pip install -r requirements.txt
+
 
 3️⃣ Add model files
 
@@ -71,7 +72,6 @@ balanced_urls.csv
 4️⃣ Run the app
 
 streamlit run app.py
-
 
 The app will open automatically in your default browser.
 
@@ -103,7 +103,6 @@ The hybrid design allows the model to understand both the **structure** and **se
 
 🗂️ Project Structure
 
-
 malicious-url-detection/
 │
 ├── app.py                      # Streamlit app entry point
@@ -115,7 +114,6 @@ malicious-url-detection/
 ├── label_encoder.joblib        # Encoded labels
 ├── requirements.txt            # Python dependencies
 └── README.md                   # Project documentation
-```
 
 
 🧭 Future Improvements
