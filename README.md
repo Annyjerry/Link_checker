@@ -101,18 +101,20 @@ Users are encouraged to cite or reference original data sources where applicable
 The hybrid design allows the model to understand both the **structure** and **semantics** of URLs, achieving strong generalization across unseen links.
 
 
-📁 Project Structure
-malicious-url-detection/
+## 🗂️ Project Structure
+
+```bash
+Link_checker/
 │
 ├── app.py                      # Main Streamlit app
-├── balanced_urls.csv           # Training dataset (optional)
-├── random_forest.joblib        # Trained model
-├── vectorizer.joblib           # TF-IDF vectorizer
-├── numeric_feature_names.joblib# Feature names
-├── numeric_scaler.joblib       # Scaler object
-├── label_encoder.joblib        # Label encoder
-├── requirements.txt            # Python dependencies
-└── README.md                   # Project documentation
+├── balanced_urls.csv            # Training dataset (included)
+├── random_forest.joblib         # Trained model
+├── vectorizer.joblib            # TF-IDF vectorizer
+├── numeric_feature_names.joblib # Feature names
+├── numeric_scaler.joblib        # Scaler object
+├── label_encoder.joblib         # Label encoder
+├── requirements.txt             # Python dependencies
+└── README.md                    # Project documentation
 
 
 🧭 Future Improvements
