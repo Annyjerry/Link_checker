@@ -103,16 +103,24 @@ The hybrid design allows the model to understand both the **structure** and **se
 
 🗂️ Project Structure
 
-malicious-url-detection/
+Link_checker/
 │
 ├── app.py                      # Streamlit app entry point
+|
 ├── balanced_urls.csv           # Training dataset (optional)
+|
 ├── random_forest.joblib        # Trained Random Forest model
+|
 ├── vectorizer.joblib           # TF-IDF vectorizer
+|
 ├── numeric_feature_names.joblib# Feature name mapping
+|
 ├── numeric_scaler.joblib       # StandardScaler object
+|
 ├── label_encoder.joblib        # Encoded labels
+|
 ├── requirements.txt            # Python dependencies
+|
 └── README.md                   # Project documentation
 
 
@@ -127,8 +135,11 @@ malicious-url-detection/
 👨‍💻 Author
 
 **Developed by:** [Aniebiet Jeremiah](https://github.com/Annyjerry)
+
 **Project:** Malicious URL Detection
+
 **Technology:** Random Forest & AI-driven Security
+
 **Version:** 1.0 (First Phase Release)
 
 > 💡 The project is in its **first-phase release**, currently optimized for standard malicious patterns.
