@@ -1,4 +1,23 @@
-## 🌐 Malicious URL Detection Using Machine Learning
+
+
+## 📖 Table of Contents
+
+- [🔍 Overview](#-overview)
+- [⚙️ Tech Stack](#️-tech-stack)
+- [🧩 Features](#-features)
+- [🧑‍💻 How to Run Locally](#-how-to-run-locally)
+- [📊 Dataset Information](#-dataset-information)
+- [🤖 Model Details](#-model-details)
+- [🗂️ Project Structure](#️-project-structure)
+- [🧭 Future Improvements](#-future-improvements)
+- [👨‍💻 Author](#-author)
+- [🧑‍🤝‍🧑 Contributing](#-contributing)
+- [📜 License](#-license)
+- [🌟 Acknowledgments](#-acknowledgments)
+
+
+
+# 🌐 Malicious URL Detection Using Machine Learning
 
 A **Streamlit-powered web app** that intelligently detects **malicious URLs** using a **Random Forest Classifier** trained on both textual and numerical features extracted from website links.
 
